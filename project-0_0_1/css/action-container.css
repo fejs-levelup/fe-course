@@ -1,0 +1,46 @@
+.action-container {
+  background: var(--grey);
+  border-radius: var(--main-radius);
+  padding: 25px 30px;
+  text-align: justify;
+  position: relative;
+}
+
+.action-container > * {
+  display: inline-block;
+}
+
+.view-list--text {
+  max-width: 870px;
+}
+
+.view-list--text h4 {
+  color: var(--dark-grey);
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 30px;
+}
+
+.view-list--text p {
+  color: #777;
+  font-size: 13px;
+  margin: 0;
+  line-height: 25px;
+}
+
+.action-container button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  color: #fff;
+  background: var(--light-red);
+  box-shadow: 0 5px var(--dark-red);
+  border-radius: var(--main-radius);
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}

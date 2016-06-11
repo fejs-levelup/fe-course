@@ -11,11 +11,6 @@ body {
   line-height: 80px;
 }
 
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
 [src=$"logo.png"] {
   height: 20px;
 }

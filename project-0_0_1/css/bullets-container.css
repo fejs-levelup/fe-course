@@ -1,0 +1,78 @@
+.bullets-container {
+	height: 440px;
+	padding: 50px 0 80px;
+}
+
+.single-bullet {
+	width: 270px;
+	height: 310px;
+	display: inline-block;
+	margin: 0 30px 0 0;
+	background: #f8f8f8;
+	box-sizing: border-box;
+	padding: 0 15px;
+	position: relative;
+	vertical-align: top;
+}
+
+.single-bullet:last-child {
+	margin-right: 0;
+}
+
+.single-bullet:hover div img:last-child {
+	display: inline;
+}
+
+.single-bullet:hover div img:first-child {
+	display: none;
+}
+
+.single-bullet:hover button {
+	background: var(--light-red);
+	box-shadow: 0 5px var(--dark-red);
+}
+
+.single-bullet div {
+	margin: 48px 0 15px;
+	text-align: center;
+	line-height: 0;
+}
+
+.single-bullet div img:last-child {
+	display: none;
+}
+
+.single-bullet h5 {
+	margin: 0;
+	color: var(--dark-grey);
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 1em;
+	text-align: center;
+}
+
+.single-bullet p {
+	text-align: center;
+	font-size: 13px;
+	margin: 32px 0 0;
+}
+
+.single-bullet button {
+	background: var(--main-color);
+	box-shadow: 0 5px #62b9b0;
+	border-radius: var(--main-radius);
+	color: #fff;
+	text-transform: lowercase;
+	width: 200px;
+	height: 50px;
+	border: none;
+	padding: 0;
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.single-bullet button:hover {
+	cursor: pointer;
+}
