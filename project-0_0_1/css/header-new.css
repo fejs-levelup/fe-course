@@ -1,30 +1,30 @@
-
 #main-header {
-  height: 80px;
-  background-image: url(../img/header-bg.png);
+  background: url(../img/header-bg.png) left bottom repeat-x;
   background-color: var(--main-color);
-  background-position: 0 bottom;
-  background-repeat: repeat-x;
-  line-height: 80px;
 }
 
-[src=$"logo.png"] {
+#main-header .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+[src*="logo"] {
   height: 20px;
-}
-
-.main-nav {
-  display: inline-block;
-  margin-left: 195px;
 }
 
 .main-nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
 }
 
-.main-nav li {
-  display: inline-block;
+.dropdown-menu div {
+  display: none;
+}
+
+.main-nav > ul > li {
+  margin: 0 5px;
 }
 
 .main-nav a {
@@ -34,7 +34,6 @@
   font-size: 16px;
   text-decoration: none;
   padding: 6px 13px;
-
 }
 
 .active-nav a {
@@ -49,41 +48,32 @@
   border-radius: var(--main-radius);
 }
 
-.main-nav > ul > li.active-nav a:hover {
-  background: #609491;
-  box-shadow: 0 3px #528b86;
-}
-
 .dropdown-menu {
   position: relative;
 }
 
-.dropdown-menu a {
-  position: relative;
-  padding: 6px 7px 6px 18px;
+.dropdown-menu div {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  padding: 20px 0 0;
+  z-index: 9;
 }
 
-.dropdown-menu a::before {
-  content: "";
-  width: 8px;
-  height: 5px;
-  position: absolute;
+.dropdown-menu:hover div {
   display: block;
-  background: url(../img/dropdown-icon.png) center center no-repeat;
-  left: 6px;
-  top: 50%;
-  margin-top: -2px;
 }
 
-.dropdown-menu ul {
-  display: none;
-  position: absolute;
+.dropdown-menu div > ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: relative;
   line-height: 30px;
   background: var(--dark-red);
   padding: 4px;
   border-radius: var(--main-radius);
-  top: 70px;
-  z-index: 10;
 }
 
 .dropdown-menu ul::before{
@@ -99,11 +89,6 @@
   left: 4px;
 }
 
-.dropdown-menu:hover ul {
-  display: block;
-  position: absolute;
-}
-
 .dropdown-menu li {
   width: 190px;
   background: var(--lightest-red);
@@ -112,16 +97,13 @@
   margin: 0 0 4px;
 }
 
-.dropdown-menu li:last-child {
-  margin: 0;
-}
-
 .dropdown-menu ul a {
   text-transform: none;
   font-weight: normal;
   font-size: 14px;
   padding: 0 8px 0 25px;
   display: block;
+  position: relative;
 }
 
 .dropdown-menu ul a::before {
@@ -139,7 +121,29 @@
   background: var(--main-color) !important;
 }
 
-.search-icon {
-  width: 16px;
-  background: url(../img/search.png) center calc(50% - 2px) no-repeat;
+#search-input {
+  display: none;
 }
+
+[for="search-input"] {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

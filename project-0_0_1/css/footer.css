@@ -1,5 +1,6 @@
 #main-footer {
-  background: var(--main-color);
+  background: url("../img/Path3.png") top left repeat-x;
+  background-color: var(--main-color);
   padding: 45px 0;
   color: #fff;
 }
@@ -98,27 +99,42 @@
 
 #secondary-footer {
   background: #6ab3ac;
-  color: #fff;
   line-height: 50px;
-  text-align: justify;
-  height: 50px;
-  overflow: hidden;
 }
 
-#secondary-footer > div > div {
-  display: inline-block;
-  vertical-align: top;
+.justified-block {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
 }
 
-.justified-block::after {
-  content: "";
-  display: inline-block;
-  height: 0;
-  width: 100%;
-  line-height: 0;
+.social-links i {
+  padding: 0 5px;
 }
 
-#secondary-footer i {
-  font-size: 22px;
-  padding: 14px 8px 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
