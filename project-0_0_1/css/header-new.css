@@ -26,7 +26,6 @@
 .main-nav > ul > li {
   margin: 0 5px;
 }
-
 .main-nav a {
   text-transform: uppercase;
   color: #fff;
@@ -46,6 +45,11 @@
   background: var(--light-red);
   box-shadow: 0 3px var(--dark-red);
   border-radius: var(--main-radius);
+}
+
+.main-nav > ul > li.active-nav:hover a {
+  background: #609491;
+  box-shadow: 0 3px #528b86;
 }
 
 .dropdown-menu {
@@ -95,6 +99,10 @@
   border-radius: var(--main-radius);
   color: #fff;
   margin: 0 0 4px;
+}
+
+.dropdown-menu li:last-child {
+  margin: 0;
 }
 
 .dropdown-menu ul a {

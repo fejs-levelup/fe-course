@@ -1,3 +1,16 @@
+#view-list {
+	position: relative;
+}
+
+#view-list::after {
+	content: "";
+	width: 100%;
+	height: 19px;
+	position: absolute;
+	background: url("../img/Path3.png") 0 0 repeat-x;
+	z-index: 9;
+}
+
 .bullets-container {
 	height: 440px;
 	padding: 50px 0 80px;

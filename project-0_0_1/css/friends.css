@@ -1,0 +1,252 @@
+#carousel-and-friends {
+  background: linear-gradient(to bottom, #ececec 396px, #f3f3f3 396px);
+  padding: 60px 0 50px;
+}
+
+#carousel-and-friends h2 {
+  text-align: center;
+  color: var(--dark-red);
+  font-size: 40px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0;
+}
+
+#carousel-and-friends .secondary-headline {
+  text-align: center;
+  color: var(--dark-grey);
+  margin: 0 0 120px;
+}
+
+.image-carousel {
+  display: flex;
+  justify-content: space-between;
+  height: 260px;
+  margin-bottom: 90px;
+}
+
+.image-carousel-item {
+  height: 100%;
+  background: url(../img/carousel-item-bg.png) center top no-repeat;
+  background-size: contain;
+  width: 33%;
+}
+
+.image-carousel-item:nth-child(2) {
+  transform: scale(1.4);
+}
+
+.widgets-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-bullets,
+.feedbacks-container {
+  width: 225px;
+}
+
+.speedometrs-container {
+  width: 550px;
+}
+
+#carousel-and-friends h6 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  color: var(--dark-grey);
+  text-transform: none;
+}
+
+.widgets-container ul {
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+.widgets-container .fa-arrow-right {
+  color: var(--dark-red);
+  font-size: .8em;
+}
+
+.widgets-container li {
+  font-size: 13px;
+  line-height: 1.2em;
+  margin: 0 0 10px;
+}
+
+.speedometrs-container p {
+  font-size: 13px;
+  line-height: 2em;
+  margin: 0;
+}
+
+.speedometrs-container p a {
+  color: var(--dark-red);
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0 0;
+}
+
+.chart-item {
+  width: 120px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-circle {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--dark-grey);
+  line-height: 64px;
+}
+
+.charts > div:nth-child(1) .chart-circle {
+  background: linear-gradient(to right,#e2534b,#e2534b 50%,#76c5be 50%,#76c5be);
+}
+
+.charts > div:nth-child(2) .chart-circle {
+  background: linear-gradient(140deg,#e2534b,#e2534b 50%,#76c5be 50%,#76c5be);
+}
+
+.charts > div:nth-child(3) .chart-circle {
+  background: linear-gradient(150deg,#e2534b,#e2534b 50%,#76c5be 50%,#76c5be);
+}
+
+.charts > div:nth-child(4) .chart-circle {
+  background: linear-gradient(to bottom, #e2534b, #e2534b 50%, #76c5be 50%, #76c5be);
+}
+
+.circle-deg {
+  background: var(--grey);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  top: 15px;
+  left: 15px;
+  position: absolute;
+}
+
+.chart-descr {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 25px;
+  line-height: 1em;
+  color: var(--dark-grey);
+}
+
+.comment {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: var(--main-radius);
+  position: relative;
+  line-height: 1.8em;
+  color: var(--dark-grey);
+}
+
+.comment::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 12px solid #f8f8f8;
+  border-right: 10px solid #f8f8f8;
+  border-left: 10px solid transparent;
+  border-bottom: 12px solid transparent;
+  position: absolute;
+  bottom: -24px;
+  left: 18px;
+}
+
+.author {
+  padding: 8px 0 0 48px;
+  font-weight: bold;
+  color: var(--dark-grey);
+}
+
+.carousel-controller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 0;
+}
+
+.controller-title {
+  color: var(--dark-grey);
+  font-size: 16px;
+}
+
+.controller-slider {
+  border-top: 1px solid #e1e2e2;
+  position: relative;
+  min-width: 880px;
+}
+
+.controller-slider span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  background: #e1e2e2;
+}
+
+.carousel-navigation {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-navigation button {
+  background: #98a3a3;
+  border: none;
+  border-bottom: 2px solid var(--dark-grey);
+  border-radius: var(--main-radius);
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  padding: 0;
+}
+
+.carousel-navigation button:first-child i {
+  transform: rotate(180deg);
+  text-shadow: 0 -3px #fff;
+  color: transparent;
+}
+
+.carousel-navigation button:hover {
+  border-color: var(--dark-red);
+  background: var(--dark-red);
+}
+
+.partners {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners li {
+  width: 170px;
+  height: 90px;
+  background: #f8f8f8;
+  border-radius: var(--main-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
